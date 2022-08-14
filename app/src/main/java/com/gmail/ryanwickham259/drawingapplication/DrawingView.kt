@@ -13,7 +13,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
     private var mDrawPaint: Paint? = null
     private var mCanvasPaint: Paint? = null
     private var mBrushSize: Float = 0.toFloat()
-    private var color = Color.BLACK
+    private var colour = Color.BLACK
     private var canvas: Canvas? = null
     private val mPaths = ArrayList<CustomPath>()
 
@@ -23,8 +23,8 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
 
     private fun setupDrawing(){
         mDrawPaint = Paint()
-        mDrawPath = CustomPath(color, mBrushSize)
-        mDrawPaint!!.color = color
+        mDrawPath = CustomPath(colour, mBrushSize)
+        mDrawPaint!!.color = colour
         mDrawPaint!!.style = Paint.Style.STROKE
         mDrawPaint!!.strokeJoin = Paint.Join.ROUND
         mDrawPaint!!.strokeCap = Paint.Cap.ROUND
@@ -62,7 +62,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
 
         when(event?.action){
             MotionEvent.ACTION_DOWN -> {
-                mDrawPath!!.color = color
+                mDrawPath!!.color = colour
                 mDrawPath!!.brushThickness = mBrushSize
 
                 mDrawPath!!.reset()
@@ -77,7 +77,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
             }
             MotionEvent.ACTION_UP -> {
                 mPaths.add(mDrawPath!!)
-                mDrawPath = CustomPath(color, mBrushSize)
+                mDrawPath = CustomPath(colour, mBrushSize)
             }
             else -> return false
         }
@@ -94,6 +94,11 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
             resources.displayMetrics
         )
         mDrawPaint!!.strokeWidth = mBrushSize
+    }
+
+    fun setColour(newColour: String){
+        colour = Color.parseColor(newColour)
+        mDrawPaint!!.color = colour
     }
 
     internal inner class CustomPath(var color: Int, var brushThickness: Float) : Path() {
