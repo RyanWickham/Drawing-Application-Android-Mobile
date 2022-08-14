@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/Drawing-Application-Android-Mobile/app/src/main/res/layout/activity_main.xml" value="0.33152173913043476" />
+        <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/Drawing-Application-Android-Mobile/app/src/main/res/drawable/background_drawing_view_layout.xml" value="0.24375" />
+        <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/Drawing-Application-Android-Mobile/app/src/main/res/drawable/large.xml" value="0.24375" />
+        <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/Drawing-Application-Android-Mobile/app/src/main/res/drawable/medium.xml" value="0.24375" />
+        <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/Drawing-Application-Android-Mobile/app/src/main/res/drawable/small.xml" value="0.24375" />
+        <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/Drawing-Application-Android-Mobile/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/Drawing-Application-Android-Mobile/app/src/main/res/layout/dialog_brush_size.xml" value="0.1671195652173913" />
         <entry key="..\:/Users/ryanw/AndroidStudiosProjects/DrawingApplication/app/src/main/res/layout/activity_main.xml" value="0.31875" />
       </map>
     </option>
