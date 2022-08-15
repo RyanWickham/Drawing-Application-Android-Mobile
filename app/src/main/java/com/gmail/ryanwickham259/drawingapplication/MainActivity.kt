@@ -89,11 +89,6 @@ class MainActivity : AppCompatActivity() {
             drawingView?.onClickUndo()
         }
 
-        val ibSave: ImageButton = findViewById(R.id.ibSave)
-        ibSave.setOnClickListener {
-            //TODO save button
-        }
-
         val ibGallery: ImageButton = findViewById(R.id.ibGallery)
         ibGallery.setOnClickListener {
             requestStoragePermission()
